@@ -1,4 +1,11 @@
 dist: bionic
+services:
+  - docker
+addons:
+  apt:
+    packages:
+      # Install the latest version of Docker.
+      - docker-ce
 language: go
 go: 
  - 1.14.4
@@ -6,4 +13,9 @@ go:
 
 script:
  - go test -v ./...
+   - ./travis.sh
  
+
+
+
+
