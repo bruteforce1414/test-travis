@@ -1,0 +1,27 @@
+dist: bionic
+services:
+  - docker
+
+codecov: true  
+
+addons:
+  apt:
+    packages:
+      # Install the latest version of Docker.
+      - docker-ce
+language: go
+go: 
+ - 1.14.4
+ - 1.13.9
+
+script:
+- go test -v ./...
+ 
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -v
+
+
+
+
+
