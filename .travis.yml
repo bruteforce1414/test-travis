@@ -4,9 +4,6 @@ services:
 
 codecov: true  
 
-after_success:
-  - bash <(curl -s https://codecov.io/bash) -v
-
 addons:
   apt:
     packages:
@@ -21,6 +18,8 @@ script:
 - go test -v ./...
  
 
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -v
 
 
 
