@@ -15,7 +15,7 @@ go:
  - 1.13.9
 
 script:
-- go test -v ./...
+  - go test -race -coverprofile=coverage.txt -covermode=atomic
  
 
 after_success:
