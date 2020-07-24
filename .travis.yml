@@ -10,7 +10,7 @@ jobs:
   include:
   - stage: test
     script:
-    - go test --tags=integration ./... -coverprofile=coverage.out -covermode=atomic
+    - go test ./... -coverprofile=coverage.out -covermode=atomic
       -p=1
     after_success:
     - bash <(curl -s https://codecov.io/bash)
