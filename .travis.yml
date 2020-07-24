@@ -6,3 +6,6 @@ go:
 
 script:
  - go test -v ./...
+ 
+ - name: Run golangci-lint
+  uses: golangci/golangci-lint-action@v1.2.1
