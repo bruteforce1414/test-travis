@@ -1,4 +1,3 @@
-
 travis_fold:start:worker_info
 [0K[33;1mWorker information[0m
 hostname: 153c2271-ae52-47ba-b410-21fc400409b8@1.worker-org-8b5957499-7n7xm.gce-production-3
