@@ -1,6 +1,9 @@
 dist: bionic
 services:
   - docker
+
+codecov: true  
+
 addons:
   apt:
     packages:
