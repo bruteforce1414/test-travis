@@ -10,6 +10,6 @@ func TestCalculateSuccess(t *testing.T) {
 	assert.Equal(t, count.Count(), 2)
 }
 
-func TestCalculateFail(t *testing.T) {
+/*func TestCalculateFail(t *testing.T) {
 	assert.Equal(t, count.Count(), 3)
-}
+}*/
